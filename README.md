@@ -11,10 +11,10 @@ Tools and Technologies Used
 - HTML
 
 # Creating the Project
-Opening the terminal application in Mac operating system, I created a folder Homework_6. In terminal I re-created my database from my previous assignment through MySQL. I then created a python file app.py. In that I created my flask application in python programming language. Then I created a folder named template, which consisted of all the HTML files.
+Opening the terminal application in Mac operating system, I created a folder Final_Project. In terminal I re-created my database from my previous assignment through MySQL. I then created a python file app.py. In that I created my flask application in python programming language. Then I created a folder named template, which consisted of all the HTML files.
 Starting the Flask Application
 - Open terminal
-- Navigating to the folder Homework_6.
+- Navigating to the folder Final_Project.
 - Compiling the program:
   - export FLASK_APP=app.py
   - export FLASK_ENV=development
