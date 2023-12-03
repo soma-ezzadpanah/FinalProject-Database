@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light grey background */
+            text-align: center; /* Center text */
+            font-family: Arial, sans-serif; /* Font style */
+        }
+        h2 {
+            color: #333; /* Dark grey text for the heading */
+            margin-top: 50px; /* Space from top */
+        }
+        table {
+            margin: 20px auto; /* Center table and add margin */
+            border-collapse: collapse; /* Remove gaps between cells */
+        }
+        th, td {
+            border: 1px solid #ddd; /* Light grey border for table cells */
+            padding: 8px; /* Padding inside cells */
+        }
+        th {
+            background-color: #007bff; /* Bright blue background for headers */
+            color: white; /* White text for headers */
+        }
+        a {
+            display: block; /* Display as block */
+            margin-top: 20px; /* Margin on top */
+            color: #007bff; /* Bright blue color for link */
+            text-decoration: none; /* Remove underline */
+            font-size: 18px; /* Size of the link text */
+        }
+        a:hover {
+            color: #0056b3; /* Darker blue on hover for link */
+        }
+    </style>
+</head>
+<body>
+    <h2>Search Results</h2>
+    {% if books %}
+        <table>
+            <tr>
+                <th>ISBN</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Publication Year</th>
+                <th>Publisher</th>
+                <th>Total Copies</th>
+                <th>Checked Out</th>
+		<th>Copies Available</th>
+                <th>Library</th>
+            </tr>
+            {% for book in books %}
+            <tr>
+                <td>{{ book.ISBN }}</td>
+                <td>{{ book.Title }}</td>
+                <td>{{ book.Author }}</td>
+                <td>{{ book.Genre }}</td>
+                <td>{{ book.Publication_Year }}</td>
+                <td>{{ book.Publisher }}</td>
+                <td>{{ book.Total_Copies }}</td>
+                <td>{{ book.Checked_Out }}</td>
+ 		<td>{{ book.Copies_Available }}</td>
+                <td>{{ book.LibraryName }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p>No results found.</p>
+    {% endif %}
+    <a href="{{ url_for('search') }}">Back to Search</a>
+    <br>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>
+

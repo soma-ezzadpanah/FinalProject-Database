@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light grey background */
+            text-align: center; /* Center text */
+            font-family: Arial, sans-serif; /* Font style */
+        }
+        h2 {
+            color: #333; /* Dark grey text for the heading */
+            margin-top: 50px; /* Space from top */
+        }
+        form {
+            display: inline-block;
+            margin-top: 20px;
+        }
+        label, input {
+            margin: 10px 0; /* Space around inputs */
+        }
+        button {
+            background-color: #007bff; /* Bright blue background */
+            color: white; /* White text */
+            padding: 10px 15px; /* Padding around button text */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Cursor change on hover */
+            font-size: 16px; /* Text size */
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <h2>Login</h2>
+    <form action="{{ url_for('login') }}" method="post">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
+
