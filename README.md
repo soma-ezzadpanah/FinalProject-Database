@@ -3,7 +3,7 @@
 
 # Introduction
 In this document, I will explain how I set up a developed environment on a Mac for a Python-based web application using Flask and MySQL. The application also involves basic HTML for the frontend.
-Tools and Technologies Used
+## Tools and Technologies Used
 - IDE (Terminal on Mac Laptop)
 - Python – downloaded in Terminal
 - Flask – Installed in Terminal
