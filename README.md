@@ -18,9 +18,9 @@ Starting the Flask Application
 - Compiling the program:
   - export FLASK_APP=app.py
   - export FLASK_ENV=development
-- Running the flask: o
+- Running the flask:
   - flask run #This command started a local development server, and the application was accessed by going to the link: http://127.0.0.1:5000 in the web browser.
-- To stop the server, I pressed ‘CTRL+C’.
+- To stop the server, I typed ‘CTRL+C’.
 
 # Conclusion
 With the steps I have included above, I had a functional development for building a web application with Flask and MySQL on macOS. This allowed me to develop, test, and refine my application locally.
