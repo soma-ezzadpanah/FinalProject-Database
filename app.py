@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for, session, f
 import mysql.connector
 import os
 
-# App settings 
+# App settings
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'YourSecretKey'
 app.config['SESSION_COOKIE_NAME'] = 'user_session'
@@ -41,7 +41,7 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
-        user = query_database(username, password)    
+        user = query_database(username, password)
         if user is not None:
             session['username'] = username
             return redirect(url_for('search'))
@@ -78,5 +78,3 @@ def home():
 
 if __name__ == '__main__':
     app.run(debug=True)
-
-
