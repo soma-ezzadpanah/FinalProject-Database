@@ -13,10 +13,10 @@
             color: #333; /* Dark grey text for the heading */
             margin-top: 50px; /* Space from top */
         }
-        form {
+        form {   
             display: inline-block;
             margin-top: 20px;
-        }
+        }   
         label, select, input {
             margin: 10px 0; /* Space around inputs */
         }
@@ -24,14 +24,14 @@
             background-color: #007bff; /* Bright blue background */
             color: white; /* White text */
             padding: 10px 15px; /* Padding around button text */
-            border: none; /* Remove border */
+            border: none; /* Remove border */   
             border-radius: 5px; /* Rounded corners */
             cursor: pointer; /* Cursor change on hover */
             font-size: 16px; /* Text size */
         }
         button:hover {
             background-color: #0056b3; /* Darker blue on hover */
-        }
+        }  
         a {
             display: block; /* Display as block */
             margin-top: 20px; /* Margin on top */
@@ -51,14 +51,14 @@
         <select name="criteria" id="criteria">
             <option value="ISBN">ISBN</option>
             <option value="Title">Title</option>
-            <option value="Author">Author</option>
+            <option value="Author">Author</option>   
             <option value="Genre">Genre</option>
             <option value="Publisher">Publisher</option>
         </select><br>
-        <input type="text" id="search_term" name="search_term" placeholder="Enter search term" required><br>
+        <input type="text" id="search_term" name="search_term" placeholder="Ent$
         <button type="submit">Search</button>
     </form>
     <a href="{{ url_for('logout') }}">Logout</a>
 </body>
 </html>
-
+            
