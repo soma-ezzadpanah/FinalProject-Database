@@ -1,27 +1,32 @@
-</<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Home Page</title>
     <style>
         body {
-            background-color: #f0f0f0; /* Change this to your preferred background color */
-            text-align: center; /* Center text */
-            font-family: Arial, sans-serif; /* Optional: Change the font */
+            background-image: url('/static/books.jpg'); /* Use the uploaded ima$
+background */
+            background-size: cover; /* Cover the entire page */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Keep the image fixed while scrolli$
+            text-align: center;
+            font-family: Arial, sans-serif;
         }
         h1 {
-            color: #333; /* Change this to your preferred text color for the heading */
-            margin-top: 100px; /* Adjust space from top of the page */
+            color: white; /* Set heading color to white */
+            margin-top: 100px;
         }
         a {
-            display: inline-block; /* Align links next to each other */
-            margin: 10px; /* Space between links */
-            text-decoration: none; /* Remove underline from links */
-            color: #007bff; /* Color of the links */
-            font-size: 18px; /* Size of the link text */
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: white; /* Set link color to white */
+            font-size: 18px;
         }
         a:hover {
-            color: #0056b3; /* Color of links on hover */
+            color: #cccccc; /* Light grey color for links on hover */
         }
     </style>
 </head>
@@ -31,4 +36,3 @@
     <a href="{{ url_for('search') }}">Search Books</a>
 </body>
 </html>
-
