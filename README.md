@@ -11,7 +11,7 @@ In this document, I will explain how I set up a developed environment on a Mac f
 - HTML
 
 ## Creating the Project
-Opening the terminal application in Mac operating system, I created a folder Final_Project. In terminal created my database. I then created a python file app.py. In that I created my flask application in python programming language. Then I created a folder named template, which consisted of all the HTML files.
+Opening the terminal application in Mac operating system, I created a folder Final_Project, created my database, and created a folder in Final_project called templates. I then created a python file app.py located in folder Final_Project. In that I created my flask application in python programming language. In the folder templates, consisted all the HTML files.
 Starting the Flask Application
 - Open terminal
 - Navigating to the folder Final_Project.
