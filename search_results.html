@@ -43,14 +43,14 @@
         <table>
             <tr>
                 <th>ISBN</th>
-                <th>Title</th>
+                <th>Title</th>  
                 <th>Author</th>
                 <th>Genre</th>
                 <th>Publication Year</th>
                 <th>Publisher</th>
                 <th>Total Copies</th>
                 <th>Checked Out</th>
-		<th>Copies Available</th>
+                <th>Copies Available</th>
                 <th>Library</th>
             </tr>
             {% for book in books %}
@@ -63,7 +63,7 @@
                 <td>{{ book.Publisher }}</td>
                 <td>{{ book.Total_Copies }}</td>
                 <td>{{ book.Checked_Out }}</td>
- 		<td>{{ book.Copies_Available }}</td>
+                <td>{{ book.Copies_Available }}</td>
                 <td>{{ book.LibraryName }}</td>
             </tr>
             {% endfor %}
@@ -76,4 +76,4 @@
     <a href="{{ url_for('logout') }}">Logout</a>
 </body>
 </html>
-
+       
